@@ -6,4 +6,4 @@ RUN zypper --non-interactive install socat
 
 ENTRYPOINT ["socat"]
 
-CMD ["--version"]
+CMD ["-V"]
