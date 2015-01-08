@@ -1,4 +1,4 @@
-FROM nimbostrati/updated_13_1
+FROM opensuse
 MAINTAINER Stephen Moore, stephen.moore@linux.com
 
 RUN zypper update
