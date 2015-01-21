@@ -5,4 +5,4 @@ RUN zypper --non-interactive --gpg-auto-import-keys update
 
 ENTRYPOINT ["/bin/bash", "-c"]
 
-CMD ["uname", "-a"]
+CMD ["uname -a"]
