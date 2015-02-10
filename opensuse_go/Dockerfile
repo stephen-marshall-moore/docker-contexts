@@ -5,8 +5,9 @@ RUN zypper --non-interactive --gpg-auto-import-keys install go
 
 ENV GOROOT /usr/lib64/go
 ADD golang/ /usr/local/lib64/go/
+ENV GOPATH /usr/local/lib64/go
 
-ENV PATH $PATH:${GOPATH//://bin}/bin
+ENV PATH $PATH:$GOROOT/bin:$GOPATH/bin
 
 ENTRYPOINT ["go"]
 
